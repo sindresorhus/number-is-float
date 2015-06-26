@@ -1,0 +1,34 @@
+{
+  "name": "number-is-float",
+  "version": "0.0.0",
+  "description": "Check if something is a float",
+  "license": "MIT",
+  "repository": "sindresorhus/number-is-float",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "number",
+    "num",
+    "float",
+    "check",
+    "is"
+  ],
+  "dependencies": {
+    "is-finite": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
