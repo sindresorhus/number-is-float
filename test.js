@@ -1,16 +1,14 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(fn(1.1));
-	t.assert(fn(-1.1));
-	t.assert(fn(Number.MAX_VALUE - 0.1));
-	t.assert(!fn(1));
-	t.assert(!fn(NaN));
-	t.assert(!fn(Infinity));
-	t.assert(!fn(-Infinity));
-	t.assert(!fn(null));
-	t.assert(!fn(undefined));
-	t.end();
+test(t => {
+	t.true(fn(1.1));
+	t.true(fn(-1.1));
+	t.true(fn(Number.MAX_VALUE - 0.1));
+	t.false(fn(1));
+	t.false(fn(NaN));
+	t.false(fn(Infinity));
+	t.false(fn(-Infinity));
+	t.false(fn(null));
+	t.false(fn(undefined));
 });
