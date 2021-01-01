@@ -1,4 +1,4 @@
-# number-is-float [![Build Status](https://travis-ci.com/sindresorhus/number-is-float.svg?branch=master)](https://travis-ci.com/sindresorhus/number-is-float)
+# number-is-float
 
 > Check if something is a float
 
