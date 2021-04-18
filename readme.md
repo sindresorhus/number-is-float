@@ -11,7 +11,7 @@ $ npm install number-is-float
 ## Usage
 
 ```js
-const numberIsFloat = require('number-is-float');
+import numberIsFloat from 'number-is-float';
 
 numberIsFloat(1.5);
 //=> true

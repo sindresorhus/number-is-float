@@ -1,6 +1,4 @@
-'use strict';
-var numberIsFinite = require('is-finite');
-
-module.exports = function (x) {
-	return numberIsFinite(x) && x !== (x | 0);
-};
+export default function numberIsFloat(value) {
+	// eslint-disable-next-line unicorn/prefer-math-trunc
+	return Number.isFinite(value) && value !== (value | 0);
+}
